@@ -110,6 +110,14 @@ angular.module('styleGuideApp.controllers')
         'google-drive-picker': {
           title: 'Google Drive Picker',
           template: 'bower_components/component-google-drive-picker/demos/example.html'
+        },
+        'font-size-picker': {
+          title: 'Font Size Picker',
+          template: 'bower_components/bootstrap-form-components/demos/font-size-picker-demo.html'
+        },
+        'font-picker': {
+          title: 'Font Picker',
+          template: 'bower_components/bootstrap-form-components/demos/font-picker-demo.html'
         }
       };
 
@@ -180,5 +188,7 @@ angular.module('styleGuideApp.controllers')
 
       $scope.alignText = 'right';
       $scope.spreadsheet = {};
+
+      $scope.settings = { additionalParams: { fontName: '' } };
     }
   ]);
